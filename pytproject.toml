@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "surety-config"
+dynamic = ["version"]
+description = "Configuration management for Surety ecosystem."
+requires-python = ">=3.8"
+dependencies = [
+    "surety>=0.1,<1.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools_scm]
+write_to = "src/surety/config/_version.py"

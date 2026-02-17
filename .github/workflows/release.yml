@@ -1,0 +1,13 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    uses: elenakulgavaya/surety-actions/.github/workflows/semantic-release.yml@main
