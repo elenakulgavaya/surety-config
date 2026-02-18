@@ -8,7 +8,7 @@ dynamic = ["version"]
 description = "Configuration management for Surety ecosystem."
 requires-python = ">=3.8"
 dependencies = [
-    "surety>=0.1,<1.0"
+    "surety>=0.0.1,<1.0"
 ]
 
 [tool.setuptools.packages.find]
