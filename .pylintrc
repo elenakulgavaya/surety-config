@@ -18,6 +18,9 @@ disable=missing-function-docstring,
         missing-class-docstring,
         missing-module-docstring
 
+[TYPECHECK]
+ignored-modules=surety
+
 [BASIC]
 good-names=i,
            j,
