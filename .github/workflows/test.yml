@@ -8,11 +8,8 @@ on:
 
 jobs:
   test:
+    permissions: write-all
     runs-on: ubuntu-latest
-
-    permissions:
-      contents: read
-      pull-requests: write   # нужно для coverage comment
 
     steps:
       - uses: actions/checkout@v4
