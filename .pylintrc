@@ -3,16 +3,13 @@ init-hook='import sys; sys.path.append("./src")'
 ignore=LICENSE,
     pyproject.toml,
     README.md,
-    README.rst,
     commitlint.config.js,
-    requirements/,
     pytest.ini,
     setup.cfg,
-    pytest-coverage.txt,
+    requirements.txt,
     test-report.xml
 ignore-paths=dist,
-    fild.egg-info,
-    docs
+    fild.egg-info
 
 py-version=3.7
 suggestion-mode=yes
@@ -32,14 +29,5 @@ good-names=i,
            _
 
 [DESIGN]
-max-args=10
-max-attributes=7
-max-bool-expr=5
-max-branches=12
-max-locals=15
-max-parents=7
-max-positional-arguments=10
-max-public-methods=20
-max-returns=6
-max-statements=50
+max-args=8
 min-public-methods=0

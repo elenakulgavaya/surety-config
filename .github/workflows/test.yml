@@ -15,7 +15,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.9'
+        python-version: '3.10'
         cache: 'pip'
     - name: Install dependencies
       run: |
@@ -23,7 +23,7 @@ jobs:
         pip install -r requirements/test.txt
     - name: Running tests
       run: |
-        pytest --cache-clear --junitxml ./test-report.xml --cov-report term-missing:skip-covered --cov src > pytest-coverage.txt
+        pytest --cache-clear --junitxml ./test-report.xml --cov-report term-missing:skip-covered --cov fild_cfg > pytest-coverage.txt
 
     - name: Pytest coverage comment
       if: always()
