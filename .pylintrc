@@ -3,7 +3,6 @@ init-hook='import sys; sys.path.append("./src")'
 ignore=LICENSE,
     pyproject.toml,
     README.md,
-    commitlint.config.js,
     pytest.ini,
     setup.cfg,
     requirements.txt,
